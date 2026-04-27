@@ -1,0 +1,21 @@
+{
+  "name": "sweetshop-ui-automation",
+  "version": "1.0.0",
+  "description": "Playwright UI automation tests for Sweet Shop",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:e2e": "playwright test tests/specs/e2e.spec.ts",
+    "test:mobile": "playwright test --project=mobile",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.0.0",
+    "typescript": "^5.4.0"
+  }
+}
