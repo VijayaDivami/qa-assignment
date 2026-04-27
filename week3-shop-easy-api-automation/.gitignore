@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment – never commit secrets
+.env
+
+# Playwright generated reports (regenerated on each run)
+reports/html-report/
+reports/json-report/
+reports/coverage-report/
+
+# Playwright test artifacts (traces, videos, screenshots)
+test-artifacts/playwright-output/
+
+# OS / editor artefacts
+.DS_Store
+*.log
