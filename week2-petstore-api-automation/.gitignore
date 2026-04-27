@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Playwright outputs
+test-results/
+playwright-report/
+reports/
+test-artifacts/
+
+# Build output
+dist/
+
+# Environment (contains secrets)
+.env

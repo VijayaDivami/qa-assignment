@@ -1,0 +1,23 @@
+{
+  "name": "petstore-api-automation",
+  "version": "1.0.0",
+  "description": "API automation test suite for Swagger Petstore using Playwright",
+  "scripts": {
+    "pretest": "node -e \"const fs=require('fs');['reports/html-report','reports/json-report','test-artifacts/playwright-output'].forEach(d=>fs.mkdirSync(d,{recursive:true}))\"",
+    "test": "playwright test",
+    "test:pet": "playwright test tests/pet",
+    "test:store": "playwright test tests/store",
+    "test:user": "playwright test tests/user",
+    "test:ci": "CI=true playwright test",
+    "report:html": "playwright show-report reports/html-report"
+  },
+  "keywords": ["playwright", "api-testing", "automation", "petstore"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.5"
+  }
+}
